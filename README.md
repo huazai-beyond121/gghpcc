@@ -11,7 +11,7 @@ devtools::install_github("houyunhuang/gghpcc")
 
 ```
 library(ggcorrr)
-library(ggmantel)
+library(gghpcc)
 library(dplyr)
 library(vegan)
 data(varespec)
