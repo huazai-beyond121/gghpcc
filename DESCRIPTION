@@ -1,0 +1,27 @@
+Package: gghpcc
+Type: Package
+Title: High Performance Combination Charts
+Version: 0.1.0
+Authors@R: c(
+    person("Houyun", "Huang", , "houyunhuang@163.com", c("aut", "cre")),
+    person("Lei", "Zhou", , role = "aut"))
+Description: A simple tools to draw combination charts. Now it just can draw
+    mantel's test plot.
+License: GPL-2
+URL: https://github.com/houyunhuang/gghpcc
+LazyData: TRUE
+Encoding: UTF-8
+Depends:
+    R (>= 3.3.0),
+    ggplot2 (>= 3.0.0)
+Imports:
+    stats,
+    grid,
+    dplyr,
+    ggcorrr,
+    purrr,
+    scales,
+    vegan
+Suggests:
+    knitr
+RoxygenNote: 6.1.1
