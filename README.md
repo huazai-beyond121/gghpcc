@@ -1,10 +1,15 @@
 # gghpcc
 ## install
+
+```
 if(!require(ggcorrr))
   devtools::install_github("houyunhuang/ggcorrr")
 devtools::install_github("houyunhuang/gghpcc")
+```
 
 ## examples
+
+```
 library(ggcorrr)
 library(ggmantel)
 library(dplyr)
@@ -28,8 +33,11 @@ df_grp <- fortify_mantel(spec_df, env_df,
                                       corr_test = TRUE, 
                                       cluster = TRUE))
 ggmantel(df_grp)
+```
 
 # four group
+
+```
 df4 <- fortify_mantel(varespec, varechem, 
                      spec_select = list(spec01 = 22:25, 
                                         spec02 = 1:4, 
@@ -40,9 +48,12 @@ df4 <- fortify_mantel(varespec, varechem,
                                             show_diag = FALSE,
                                             corr_test = TRUE, 
                                             cluster = TRUE))
-ggmantel(df4) # 四组
+ggmantel(df4) 
+```
 
 # three group
+
+```
 df3 <- fortify_mantel(varespec, varechem, 
                       spec_select = list(spec01 = 22:25, 
                                          spec02 = 1:4, 
@@ -53,8 +64,11 @@ df3 <- fortify_mantel(varespec, varechem,
                                              corr_test = TRUE, 
                                              cluster = TRUE))
 ggmantel(df3)
+```
 
 # two group
+
+```
 df2 <- fortify_mantel(varespec, varechem, 
                       spec_select = list(spec01 = 22:25, 
                                          spec02 = 1:4),
@@ -65,16 +79,11 @@ df2 <- fortify_mantel(varespec, varechem,
                                              cluster = TRUE),
                       get_link_params = list())
 ggmantel(df2)
+```
 
-spec <- list(spec01 = varespec[ , 22:25],
-             spec02 = varespec[ , 1:4])
-df <- ggmantel::fortify_mantel(spec, varechem, process = FALSE,
-                               mdist_params = list(method = "euclidean"))
-corr_df <- fortify_corr(varechem, type = "upper", show_diag = FALSE,
-                        corr_test = TRUE, cluster = TRUERUE)
-mantel_df <- ggmantel::get_link_data(df, corr_df, type = "upper", grp_hjust = c(0, -1.5, -1, 0))
-ggmantel::ggmantel(mantel_df, corr_df, type = "upper", corr_type = "square", curvature = 0.05)
 # 1 group
+
+```
 df1 <- fortify_mantel(varespec, varechem, 
                       spec_select = list(spec01 = 22:25),
                       mantel_fun = "mantel",
@@ -83,4 +92,4 @@ df1 <- fortify_mantel(varespec, varechem,
                                              corr_test = TRUE, 
                                              cluster = TRUE))
 ggmantel(df1, curvature = 0.05)
-
+```
