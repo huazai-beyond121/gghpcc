@@ -18,6 +18,8 @@ get_link_data(mantel_df, corr_df, type = c("upper", "lower"),
 
 \item{var_grp_name}{the column name of link group variable in `mantel_df`.}
 
+\item{var_mat_name}{the column name of link matrix variable in `mantel_df`.}
+
 \item{show_diag}{logical, if TRUE, correalation matrix plot will don't show diagonal.}
 
 \item{grp_hjust}{a numeric vector to adjust the horizonal position of group points.}
@@ -27,8 +29,6 @@ get_link_data(mantel_df, corr_df, type = c("upper", "lower"),
 \item{mat_hjust}{a numeric vector to adjust the horizonal position of correalation matrixgroup points.}
 
 \item{mat_vjust}{a numeric vector to adjust the vertical position of correalation matrixgroup points.}
-
-\item{var_grp_name}{the column name of link matrix variable in `mantel_df`.}
 }
 \value{
 a data.frame.

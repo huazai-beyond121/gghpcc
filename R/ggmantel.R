@@ -39,14 +39,15 @@
 #' @param grp_label_vjust group link labels' vertical justification.
 #' @param scale_fill_col a colour string vector, the default value is `ggcorrr:::.default_colors`.
 #' @param scale_colour_col a colour string vector.
+#' @param scale_size_value a numeric vector.
 #' @param legend_position the position of legends ("none", "left", "right", "bottom", "top", or two-element numeric vector).
 #' @param legend_mat_title title of legend colourbar.
 #' @param legend_mat_breaks a numeric vector of positions.
 #' @param legend_mat_labels a character vector giving labels (must be same length as legend_mat_breaks).
 #' @param x_label_position the position of x axis. "top" or "bottom".
-#' @param t_label_position the position of y axis. "left" or "right".
+#' @param y_label_position the position of y axis. "left" or "right".
 #' @param xlim a numeric vector of length two providing limits of the x axis scale.
-#' @param xlim a numeric vector of length two providing limits of the y axis scale.
+#' @param ylim a numeric vector of length two providing limits of the y axis scale.
 #'
 #' @details
 #' `corr_type` supports the following nine styles and combinations.

@@ -89,6 +89,8 @@ else is 0.1.}
 
 \item{scale_colour_col}{a colour string vector.}
 
+\item{scale_size_value}{a numeric vector.}
+
 \item{legend_position}{the position of legends ("none", "left", "right", "bottom", "top", or two-element numeric vector).}
 
 \item{legend_mat_title}{title of legend colourbar.}
@@ -99,11 +101,11 @@ else is 0.1.}
 
 \item{x_label_position}{the position of x axis. "top" or "bottom".}
 
+\item{y_label_position}{the position of y axis. "left" or "right".}
+
 \item{xlim}{a numeric vector of length two providing limits of the x axis scale.}
 
-\item{t_label_position}{the position of y axis. "left" or "right".}
-
-\item{xlim}{a numeric vector of length two providing limits of the y axis scale.}
+\item{ylim}{a numeric vector of length two providing limits of the y axis scale.}
 }
 \description{
 `ggmantel()` is highly dependent on `ggcorrr` packages, and it provides a simple,

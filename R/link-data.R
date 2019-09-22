@@ -7,7 +7,7 @@
 #' @param corr_df correalation's test data.frame, must be returned by \code{\link[ggcorrr]{fortify_corr}}.
 #' @param type correalation matrix plot's type.
 #' @param var_grp_name the column name of link group variable in `mantel_df`.
-#' @param var_grp_name the column name of link matrix variable in `mantel_df`.
+#' @param var_mat_name the column name of link matrix variable in `mantel_df`.
 #' @param show_diag logical, if TRUE, correalation matrix plot will don't show diagonal.
 #' @param grp_hjust a numeric vector to adjust the horizonal position of group points.
 #' @param grp_vjust a numeric vector to adjust the vertical position of group points.
