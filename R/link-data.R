@@ -15,6 +15,7 @@
 #' @param mat_vjust a numeric vector to adjust the vertical position of correalation matrixgroup points.
 #' @return a data.frame.
 #' @seealso [gghpcc::tidy_mantel()], [gghpcc::tidy_mantel_pair()], [ggcorrr::fortify_corr().
+#' @importFrom dplyr %>%
 #' @export
 get_link_data <- function(
                           mantel_df,
